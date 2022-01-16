@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submit {
+            margin-top: 10px;
+        }
+
+        form {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <div class="form input">
+            <p>Nhap so nguyen </p>
+            <input type="text" id="input">
+        </div>
+        <div class="form output">
+            <p>So chu so le
+            </p>
+            <input type="text" id="output">
+        </div>
+        <div class="form submit">
+            <button id="submit">Dem</button>
+            <button id="delete">Huy bo</button>
+
+        </div>
+    </form>
+
+    <script>
+        let output = document.getElementById("output");
+        document.getElementById("submit").addEventListener("click", function (e) {
+            let n = document.getElementById("input").value;
+            let sum = 0;
+            let arr = [];
+            let count = 0;
+            for (let i = 0; i < n.length - 1; i++) {
+                let k = n.charAt(i);
+                arr.push(Math.floor(k));
+            }
+            for (let i of arr) {
+                if (i == 1 || i == 3 || i == 5 || i == 7 || i == 9)
+                    count++;
+            }
+            output.value = count;
+            e.preventDefault();
+        });
+
+        document.getElementById("delete").addEventListener("click", function () {
+            document.getElementById("form").reset();
+        });
+    </script>
+</body>
+
+</html>
