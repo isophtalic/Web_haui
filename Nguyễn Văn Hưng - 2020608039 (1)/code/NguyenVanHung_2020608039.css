@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #336699;
+}
+
+header img {
+  margin-left: 20px;
+}
+
+.form {
+  height: 25px;
+  background-color: #fff;
+  margin-left: 110px;
+  transform: translateY(12px);
+}
+
+select {
+  width: 200px;
+  height: 25px;
+  border: none;
+}
+
+input[type="text"] {
+  height: 22px;
+  width: 200px;
+  border: none;
+}
+
+header button {
+  padding: 5px;
+  color: #fff;
+  background-color: black;
+  border: none;
+}
+
+.cart {
+  margin-left: 150px;
+  color: #fff;
+  transform: translateY(10px);
+}
+
+i.fas.fa-shopping-cart {
+  font-size: 21px;
+}
+
+img.admin {
+  margin-left: 400px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(10px);
+}
+.container {
+  margin-top: 15px;
+
+  display: flex;
+}
+.menu {
+  width: 25%;
+}
+.menu h2 {
+  background-color: #336699;
+}
+.menu li {
+  padding: 5px;
+}
+
+ul.hiden {
+  visibility: hidden;
+  display: none;
+}
+.menu li:hover .hiden {
+  visibility: visible;
+}
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+.content {
+  width: 70%;
+  margin-left: 10px;
+}
+.title {
+  display: flex;
+  padding: 5px;
+}
+.select {
+  display: flex;
+  margin-left: 615px;
+}
+.container-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.3rem;
+}
+.container-item img {
+  width: 200px;
+  height: 150px;
+}
+.goods {
+  width: 20%;
+}
+
+.goods p {
+  color: #330066;
+  font-size: 16;
+}
+
+.goods span {
+  color: black;
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.goods p:hover {
+  background-color: #00a69b;
+  width: 250px;
+}
